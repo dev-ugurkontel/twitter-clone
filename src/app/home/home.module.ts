@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
+import { CustomLanguageOperationsPipe } from '@app/@core/pipes/languages/custom-language-operations.pipe';
 
 
 @NgModule({
@@ -12,8 +14,15 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+
+    TranslateModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+
+    // PIPES
+    CustomLanguageOperationsPipe
+  ]
 })
 export class HomePageModule {}

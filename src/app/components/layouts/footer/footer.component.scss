@@ -1,0 +1,43 @@
+footer {
+  height: 50px;
+
+  .bottom-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100vw;
+    height: 49px;
+    background-color: var(--bodyBackground);
+    border-top: 1px solid var(--borderColor);
+    z-index: 0;
+    bottom: 0;
+  }
+
+  .fa {
+    color: var(--footerBottomMenuFaIconColor);
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 21px;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+    transition: 0.2s;
+    margin: 0 3px;
+  }
+
+  .active {
+    color: var(--footerBottomMenuFaIconActiveColor);
+  }
+
+  @media not all and (pointer: coarse) {
+    .fa:hover {
+      background-color: var(--bodyElementHoverBackground);
+      color: var(--generalIconColor);
+      border-radius: 50%;
+    }
+  }
+}

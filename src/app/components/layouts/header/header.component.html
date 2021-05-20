@@ -1,0 +1,142 @@
+<header #sidebar>
+
+  <div class="sidebar">
+
+    <div class="sidebar-header">
+
+      <span class="account-info">{{ 'COMPONENTS.LAYOUTS.HEADER.TITLE' | translate }}</span>
+
+      <fa-icon (click)="toggleMenu()" [icon]="faTimes" class="fa"></fa-icon>
+
+    </div>
+
+    <div class="sidebar-content">
+
+      <ul>
+        <a routerLink="/{{ profileUrl }}">
+          <li>
+            <fa-icon [icon]="faUser" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.PROFILE' | translate }}
+            </span>
+          </li>
+        </a>
+        <a routerLink="/explore">
+          <li>
+            <fa-icon [icon]="faHashtag" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.EXPLORE' | translate }}
+            </span>
+          </li>
+        </a>
+        <a routerLink="/lists">
+          <li>
+            <fa-icon [icon]="faListAlt" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.LISTS' | translate }}
+            </span>
+          </li>
+        </a>
+        <a routerLink="/bookmarks">
+          <li>
+            <fa-icon [icon]="faBookmark" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.BOOKMARKS' | translate }}
+            </span>
+          </li>
+        </a>
+        <a routerLink="/messages" class="fa-icon">
+          <li>
+            <fa-icon [icon]="faInbox" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.MESSAGES' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <hr>
+
+        <a routerLink="/statistics">
+          <li>
+            <fa-icon [icon]="faBinoculars" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.STATISTICS' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <hr>
+
+        <a routerLink="/statistics">
+          <li>
+            <fa-icon [icon]="faCog" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.SETTINGSANDPRIVACY' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <a routerLink="/help-center">
+          <li>
+            <fa-icon [icon]="faQuestionCircle" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.HELPCENTER' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <hr>
+
+        <a href="javascript:;">
+          <li>
+            <fa-icon [icon]="faBolt" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.DATASAVING' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <a href="javascript:;" (click)="homepageSettings()">
+          <li>
+            <fa-icon [icon]="faFillDrip" class="fa-icon"></fa-icon>
+            <span class="ml-0-5">
+              {{ 'COMPONENTS.LAYOUTS.HEADER.VIEW' | translate }}
+            </span>
+          </li>
+        </a>
+
+        <hr>
+
+        <a href="javascript:;" (click)="homepageSettings()">
+          <li>
+            <span>
+              {{ 'COMPONENTS.LAYOUTS.HEADER.LOGOUT' | translate }}
+            </span>
+          </li>
+
+          <br>
+          <br>
+          <br>
+        </a>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div (click)="toggleMenu()" class="sidebar-outside"></div>
+
+  <div class="top-menu">
+
+    <fa-icon (click)="toggleMenu()" [icon]="faBars" class="fa"></fa-icon>
+
+    <a routerLink="/">
+      <fa-icon [icon]="faPaw" class="fa"></fa-icon>
+    </a>
+
+    <fa-icon (click)="homepageSettings()" [icon]="faHashtag" class="fa"></fa-icon>
+
+  </div>
+
+</header>

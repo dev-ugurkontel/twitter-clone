@@ -1,0 +1,42 @@
+{
+  "COMPONENTS": {
+    "LAYOUTS": {
+      "HEADER": {
+        "TITLE": "Hesap bilgileri",
+        "PROFILE": "Profil",
+        "EXPLORE": "Keşfet",
+        "LISTS": "Listeler",
+        "BOOKMARKS": "Yer İşaretleri",
+        "MESSAGES": "Mesajlar",
+        "STATISTICS": "İstatistikler",
+        "SETTINGSANDPRIVACY": "Ayarlar ve gizlilik",
+        "HELPCENTER": "Yardım merkezi",
+        "DATASAVING": "Veri tasarrufu",
+        "VIEW": "Görünüm",
+        "LOGOUT": "Çıkış yap",
+
+
+
+        "HOME": "Anasayfa",
+        "NOTIFICATIONS": "Bildirimler",
+        "MORE": "Daha fazla"
+      }
+    }
+  },
+  "@CORE": {
+    "SERVICES": {
+      "LANGUAGE": {
+        "NAMESBYLANGUAGE": {
+          "EN": "İngilizce",
+          "TR": "Türkçe"
+        }
+      }
+    }
+  },
+  "OTHERS": {
+    "ERRORS": {
+      "UNKNOWN": "OTHERS.ERRORS.UNKNOWN"
+    }
+  }
+}
+

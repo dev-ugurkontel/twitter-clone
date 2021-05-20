@@ -1,0 +1,41 @@
+{
+  "COMPONENTS": {
+    "LAYOUTS": {
+      "HEADER": {
+        "TITLE": "Account info",
+        "PROFILE": "Profile",
+        "EXPLORE": "Expolore",
+        "LISTS": "Lists",
+        "BOOKMARKS": "Bookmarks",
+        "MESSAGES": "Messages",
+        "STATISTICS": "Statistics",
+        "SETTINGSANDPRIVACY": "Settings and privacy",
+        "HELPCENTER": "Help center",
+        "DATASAVING": "Data saving",
+        "VIEW": "View",
+        "LOGOUT": "Log out",
+
+
+
+        "HOME": "Home",
+        "NOTIFICATIONS": "Notifications",
+        "MORE": "More"
+      }
+    }
+  },
+  "@CORE": {
+    "SERVICES": {
+      "LANGUAGE": {
+        "NAMESBYLANGUAGE": {
+          "EN": "English",
+          "TR": "Turkish"
+        }
+      }
+    }
+  },
+  "OTHERS": {
+    "ERRORS": {
+      "UNKNOWN": "OTHERS.ERRORS.UNKNOWN"
+    }
+  }
+}

@@ -1,27 +1,54 @@
-#container {
+// v1 - VARIABLES, FUNCTIONS AND THEME COLORS
+@import '../../theme/v1/variables.scss';
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-12 {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: var(--generalIconColor);
+  background-repeat:no-repeat;
+  width: 50vw;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px 0;
+  font-weight: 700;
+  color: var(--generalColor);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+select {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--generalIconColor);
+  background-repeat:no-repeat;
+  width: 50vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px 0;
+  font-weight: 700;
+  color: var(--generalColor);
+  text-align: center;
+  justify-content: center;
 
-  color: #8c8c8c;
-
-  margin: 0;
+  // remove selectbox arrow
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
 }
 
-#container a {
-  text-decoration: none;
+ul {
+  text-align: left;
+  align-items: center;
+  justify-content: center;
 }

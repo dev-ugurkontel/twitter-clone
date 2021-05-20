@@ -1,20 +1,159 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<br>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="row">
+  <div class="col-12">
+    <h3>Choose a theme</h3>
+    <button (click)="onClickSetTheme(theme.defaultLight)">Default Light</button>
+    <br>
+    <button (click)="onClickSetTheme(theme.defaultDark)">Default Dark</button>
+    <br>
+    <button (click)="onClickSetTheme(theme.darkDimmed)">Dark Dimmed</button>
   </div>
-</ion-content>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="row">
+  <div class="col-12">
+    <h3>Choose a language</h3>
+    <span class="form-inline">
+      <select
+          #selectedLang
+          (change)="onClickChangeLanguage(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()"
+          [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language | customLanguageOperations: 'namesByLanguage' | translate }}
+        </option>
+      </select>
+    </span>
+  </div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="row">
+  <div class="col-12">
+    <ul>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.HOME' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.EXPLORE' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.NOTIFICATIONS' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.MESSAGES' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.BOOKMARKS' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.LISTS' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.PROFILE' | translate }}</li>
+      <li>{{ 'COMPONENTS.LAYOUTS.HEADER.MORE' | translate }}</li>
+    </ul>
+  </div>
+</div>
+
+
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>

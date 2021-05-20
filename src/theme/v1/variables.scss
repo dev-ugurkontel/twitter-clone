@@ -1,0 +1,102 @@
+// // v1 - DEFAULT THEME CHANGE FUNCTION
+// @function var($variable) {
+//   @return map-get($variables, $variable);
+// }
+
+:root {
+  // DEFAULT GENERAL STYLES
+  --generalIconColor: rgba(29, 161, 242, 1);
+  --generalColor: rgba(255, 255, 255);
+
+  // DEFAULT LIGHT MAIN COLOR
+  --defaultLightBackground: #ffffff;
+  --defaultLightElementHoverBackground: rgba(29, 161, 242, 0.1);
+
+  // DEFAULT DARK MAIN COLOR
+  --defaultDarkBackground: #000000;
+  --defaultDarkElementHoverBackground: rgba(29, 161, 242, 0.1);
+
+  // DARK DIMMED MAIN COLOR
+  --darkDimmedBackground: #15202B;
+  --darkDimmedElementHoverBackground: rgba(29, 161, 242, 0.1);
+}
+
+
+// v1 - DEFAULT COLORS
+.default-light {
+  --bodyBackground: var(--defaultLightBackground);
+  --bodyColor: #0f1419;
+  --borderColor: rgb(235, 238, 240);
+
+  --bodyElementHoverBackground: var(--defaultLightElementHoverBackground);
+
+  // HEADER > SIDEBAR
+  --headerSidebarBackground: var(--defaultLightBackground);
+  --headerSidebarOutsideBackground: rgba(0, 0, 0, 0.4);
+  --headerAccountInfo: #0f1419;
+  --headerLiHoverBackground: rgba(230, 236, 240, 0.7);
+  --headerFaIconColor: #5b7083;
+
+  // FOOTER > BOTTOM-MENU
+  --footerBottomMenuFaIconActiveColor: var(--generalIconColor);
+  --footerBottomMenuFaIconColor: #5b7083;
+}
+
+.default-dark {
+  --bodyBackground: var(--defaultDarkBackground);
+  --bodyColor: #ffffff;
+  --borderColor: rgb(47, 51, 54);
+
+  --bodyElementHoverBackground: var(--defaultDarkElementHoverBackground);
+
+  // HEADER > SIDEBAR
+  --headerSidebarBackground: var(--defaultDarkBackground);
+  --headerSidebarOutsideBackground: rgba(91, 112, 131, 0.4);
+  --headerAccountInfo: #ffffff;
+  --headerLiHoverBackground: rgba(18, 21, 23, 0.7);
+  --headerFaIconColor: #5b7083;
+
+  // FOOTER > BOTTOM-MENU
+  --footerBottomMenuFaIconActiveColor: var(--generalIconColor);
+  --footerBottomMenuFaIconColor: #5b7083;
+}
+
+.dark-dimmed {
+  --bodyBackground: var(--darkDimmedBackground);
+  --bodyColor: #fff;
+  --borderColor: rgb(56, 68, 77);
+
+  --bodyElementHoverBackground: var(--darkDimmedElementHoverBackground);
+
+  // HEADER > SIDEBAR
+  --headerSidebarBackground: var(--darkDimmedBackground);
+  --headerSidebarOutsideBackground: rgba(91, 112, 131, 0.4);
+  --headerAccountInfo: #ffffff;
+  --headerLiHoverBackground: rgba(20, 29, 38, 0.7);
+  --headerFaIconColor: #8899a6;
+
+  // FOOTER > BOTTOM-MENU
+  --footerBottomMenuFaIconActiveColor: var(--generalIconColor);
+  --footerBottomMenuFaIconColor: #5b7083;
+}
+
+// v1 - PASS VARIABLES INTO A SASS MAP
+$variables: (
+  --generalIconColor: var(--generalIconColor),
+
+  --bodyBackground: var(--bodyBackground),
+  --bodyColor: var(--bodyColor),
+  --borderColor: var(--borderColor),
+
+  --bodyElementHoverBackground: var(--bodyElementHoverBackground),
+
+  // HEADER > SIDEBAR
+  --headerSidebarBackground: var(--headerSidebarBackground),
+  --headerSidebarOutsideBackground: var(--headerSidebarOutsideBackground),
+  --headerAccountInfo: var(--headerAccountInfo),
+  --headerFaIconColor: var(--headerFaIconColor),
+
+  // FOOTER > BOTTOM-MENU
+  --footerBottomMenuFaIconActiveColor: var(--generalIconColor),
+  --footerBottomMenuFaIconColor: var(--footerBottomMenuIconColor)
+);
