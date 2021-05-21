@@ -1,15 +1,15 @@
 # twitter-clone
 
-It is the twitter clone created using Ionic, Capacitor and Angular.
+It is the twitter clone created using Ionic, Capacitor and Angular 12.
 
 
 ### Features
 - Dynamic multi-language support with ngx translate
-- Dynamic multi-theme support (
-currently being developed on 3 themes)
+- Dynamic multi-theme support (currently being developed on 3 themes)
 - Basic system inheritance for features such as platform detection, device features detection, internet status flow, multi-language support management
-- Custom pipe structures
-- An example http service structure has been added
+- Ionic gestures tools for finger gestures (currently only used in sidebar)
+- An example pipe structure
+- An exemplary service structure
 - Created with angular lazy loading structure
 
 
@@ -17,7 +17,7 @@ currently being developed on 3 themes)
 
 
 ### Things to do
-- In order to work offline, the local database engine will be created with SQLite and Indexed Database API.
+- In order to work offline, the local database engine will be created with SQLite and Indexed Database API (sqlite will then be applied as needed).
 
 
 ### Installation
@@ -98,13 +98,13 @@ $ npx cap sync
 To update Capacitor Core and CLI:
 
 ```bash
-$ npm install @capacitor/cli@next
-$ npm install @capacitor/core@next
+$ npm i @capacitor/cli@next
+$ npm i @capacitor/core@next
 ```
 
 To update any or all of the platforms you are using:
 
 ```bash
-$ npm install @capacitor/ios@next
-$ npm install @capacitor/android@next
+$ npm i @capacitor/ios@next
+$ npm i @capacitor/android@next
 ```
