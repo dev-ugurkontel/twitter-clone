@@ -4,14 +4,20 @@ It is the twitter clone created using Ionic, Capacitor and Angular.
 
 
 ### Features
-- Capacitorjs installed on Ionic
-- Separated from ionic components
-- ngx translate added
+- Dynamic multi-language support with ngx translate
+- Dynamic multi-theme support (
+currently being developed on 3 themes)
+- Basic system inheritance for features such as platform detection, device features detection, internet status flow, multi-language support management
+- Custom pipe structures
 - An example http service structure has been added
 - Created with angular lazy loading structure
 
 
-![Twitter Clone](https://i.ibb.co/g7KHTdj/twitter-basic-clone.png "Twitter Clone")
+![Twitter Clone](http://g.recordit.co/3MjwDoMsa9.gif "Twitter Clone")
+
+
+### Things to do
+- In order to work offline, the local database engine will be created with SQLite and Indexed Database API.
 
 
 ### Installation
